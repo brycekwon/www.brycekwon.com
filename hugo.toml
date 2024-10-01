@@ -1,0 +1,51 @@
+title = "Bryce Kwon's Website" # ʕ•ᴥ•ʔ
+baseURL = "https://www.brycekwon.com"
+languageCode = "en-us"
+
+minify = true
+enableRobotsTXT = true
+disableHugoGeneratorInject = true
+disableKinds = ["taxonomy", "term", "rss"]
+
+[markup]
+    [markup.highlight]
+        lineNos = true
+        lineNumbersInTable = false
+        style = "catppuccin-macchiato"
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            hardWraps = true
+        [markup.goldmark.parser]
+            wrapStandAloneImageWithinParagraph = false
+
+[params]
+    author = "Bryce Kwon"
+    email = "TBD"
+
+# [[menu.main]]
+# name = "About"
+# url = "/"
+# weight = 10
+
+# [[menu.main]]
+# name = "Contact"
+# url = "/contact/"
+# weight = 20
+
+[[menu.social]]
+name = "GitHub"
+pre = "github"
+url = "https://github.com/brycekwon"
+weight = 10
+
+[[menu.social]]
+name = "LinkedIn"
+pre = "linkedin"
+url = "https://www.linkedin.com/in/brycekwon"
+weight = 20
+
+[[menu.social]]
+name = "Email"
+pre = "envelope"
+url = "mailto:e28b1ace-348e-4cbe-b6e4-2bce0e6b2942@simplelogin.com"
+weight = 30

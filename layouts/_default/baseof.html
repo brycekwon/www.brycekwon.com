@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        {{ partial "meta.html" . }}
+        <title>{{ .Site.Title }}</title>
+        {{ partial "seo.html" . }}
+
+        {{ $favicon := "/favicon.webp" | absURL }}
+        <link rel="shortcut icon" href="{{ $favicon }}">
+
+        {{ $style := resources.Get "css/default.css" | minify }}
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+        {{ if eq .Section "posts" }}
+            {{ $style := resources.Get "css/posts.css" | minify }}
+            <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+        {{ end }}
+    </head>
+    <body class="content">
+        <header>
+            {{ partial "header.html" . }}
+        </header>
+
+        <main id="main-content">
+            {{ block "main" . }}{{ end }}
+        </main>
+
+        <footer class="site-footer">
+            {{ partial "footer.html" }}
+        </footer>
+    </body>
+</html>

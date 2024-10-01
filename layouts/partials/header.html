@@ -1,0 +1,19 @@
+<div class="site-nav">
+    <a href="{{ relURL .Site.Home.RelPermalink }}" class="title">
+        <h1>{{ .Site.Title }}</h1>
+    </a>
+    <ul class="menu menu-social">
+        {{ range.Site.Menus.social -}}
+        <li>
+            <a href="{{ .URL }}" target="_blank" rel="noopener noreferrer">
+                {{ partial "icon.html" (dict "icon" .Pre "title" .Name ) }}
+            </a>
+        </li>
+        {{- end }}
+    </ul>
+</div>
+<nav>
+    {{ range .Site.Menus.main.ByWeight }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+</nav>

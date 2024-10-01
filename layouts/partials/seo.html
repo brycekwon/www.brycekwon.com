@@ -1,0 +1,46 @@
+<meta name="robots" content="index, follow">
+
+{{ with or .Title site.Title site.Params.title | plainify }}
+    <meta name="title" content="{{ . }}">
+{{ end }}
+
+{{ with or .Description .Summary site.Params.description | plainify | htmlUnescape | chomp }}
+    <meta name="description" content="{{ . }}">
+{{ end }}
+
+{{ with or .Title site.Title | plainify }}
+    <meta itemprop="name" content="{{ . }}">
+{{ end }}
+
+{{ with or .Description .Summary site.Params.description | plainify | htmlUnescape | chomp }}
+    <meta itemprop="description" content="{{ . }}">
+{{ end }}
+
+{{ with or .Title site.Title site.Params.title | plainify }}
+    <meta property="og:title" content="{{ . }}">
+{{ end }}
+
+{{ with or .Description .Summary site.Params.description | plainify | htmlUnescape | chomp }}
+    <meta property="og:description" content="{{ . }}">
+{{ end }}
+
+{{ with or .Params.locale site.Language.LanguageCode }}
+    <meta property="og:locale" content="{{ replace . `` `_` }}">
+{{ end }}
+
+{{ if .IsPage }}
+    <meta property="og:type" content="article">
+    {{ with .Section }}
+        <meta property="article:section" content="{{ . }}">
+    {{ end }}
+{{ else }}
+    <meta property="og:type" content="website">
+{{ end }}
+
+{{ with or .Title site.Title site.Params.title | plainify }}
+    <meta name="twitter:title" content="{{ . }}">
+{{ end }}
+
+{{ with or .Description .Summary site.Params.description | plainify | htmlUnescape | chomp }}
+    <meta name="twitter:description" content="{{ . }}">
+{{ end }}

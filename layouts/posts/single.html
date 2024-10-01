@@ -1,0 +1,24 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+    <p class="byline">
+        <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+            {{ .Date.Format "2006-01-02" }}
+        </time>
+        · {{ .Params.author }} · 
+
+        {{ $wordsPerMinute := 250 }}
+        {{ $wordCount := len (split .Content " ") }}
+        {{ $readingTime := add (int (div $wordCount $wordsPerMinute)) 1 }}
+
+        {{ $readingTime }} minute{{ if gt $readingTime 1 }}s{{ end }} ({{ $wordCount }} words)
+    </p>
+    <content>
+        {{ .Content }}
+    </content>
+    <br/>
+    <p>
+        <a href='mailto:{{ .Params.email }}?subject=Reply to "{{ default $.Site.Title $.Page.Title }}"'>
+            Reply to this post by email ↪
+        </a>
+    </p>
+{{ end }}

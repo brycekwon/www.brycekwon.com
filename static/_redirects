@@ -1,0 +1,9 @@
+# active redirects
+/github https://github.com/brycekwon/ 301
+/linkedin https://www.linkedin.com/in/brycekwon/ 301
+
+# fun redirects
+/wp https://screenprank.com/gandalf/ 301
+/wp-login.php https://screenprank.com/gandalf/ 301
+/wordpress https://screenprank.com/gandalf/ 301
+/.git https://screenprank.com/gandalf/ 301
