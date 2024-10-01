@@ -2,6 +2,7 @@
     X-Frame-Options: DENY
     X-Content-Type-Options: nosniff
     Referrer-Policy: no-referrer
+    Strict-Transport-Security: max-age=15768000; includeSubDomains; preload
     Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), fullscreen=(self), sync-xhr=(self), interest-cohort=()
     Content-Security-Policy: default-src 'none'; manifest-src 'self'; font-src 'self'; img-src 'self'; style-src 'self'; script-src 'self' static.cloudflareinsights.com; connect-src 'self' cloudflareinsights.com; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
 
