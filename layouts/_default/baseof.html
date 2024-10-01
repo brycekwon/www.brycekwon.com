@@ -6,7 +6,7 @@
         <title>{{ .Site.Title }}</title>
         {{ partial "seo.html" . }}
 
-        {{ $favicon := "/favicon.webp" | absURL }}
+        {{ $favicon := "/favicon.ico" | absURL }}
         <link rel="shortcut icon" href="{{ $favicon }}">
 
         {{ $style := resources.Get "css/default.css" | minify }}
