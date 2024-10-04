@@ -10,6 +10,11 @@
             </a>
         </li>
         {{- end }}
+        <li>
+            <a href="/protected-email" obfuscated-email="{{ .Site.Params.author.email }}">
+                {{ partial "icon.html" (dict "icon" "envelope" "title" "Email") }}
+            </a>
+        </li>
     </ul>
 </div>
 <nav>

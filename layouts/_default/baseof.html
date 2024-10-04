@@ -9,6 +9,9 @@
         {{ $favicon := "/favicon.ico" | absURL }}
         <link rel="shortcut icon" href="{{ $favicon }}">
 
+        {{ $script := resources.Get "js/email-obfuscation.js" | minify }}
+        <script src="{{ $script.RelPermalink }}"></script>
+
         {{ $style := resources.Get "css/default.css" | minify }}
         <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 

@@ -2,9 +2,10 @@
     X-Frame-Options: DENY
     X-Content-Type-Options: nosniff
     Referrer-Policy: no-referrer
+    Cache-Control: max-age=259200, public, must-revalidate
     Strict-Transport-Security: max-age=15768000; includeSubDomains; preload
-    Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), fullscreen=(self), sync-xhr=(self), interest-cohort=()
-    Content-Security-Policy: default-src 'none'; manifest-src 'self'; font-src 'self'; img-src 'self'; style-src 'self'; script-src 'self' static.cloudflareinsights.com; connect-src 'self' cloudflareinsights.com; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+    Permissions-Policy: accelerometer=(), autoplay=(), camera=(), clipboard-read=(), clipboard-write=(), fullscreen=*, geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), usb=()
+    Content-Security-Policy: upgrade-insecure-requests; default-src 'none'; manifest-src 'self'; font-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
 
 https://www-brycekwon-com.pages.dev/*
     X-Robots-Tag: noindex

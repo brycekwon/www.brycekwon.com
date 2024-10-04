@@ -1,4 +1,4 @@
-title = "Bryce Kwon's Website" # ʕ•ᴥ•ʔ
+title = "Bryce Kwon's Website"
 baseURL = "https://www.brycekwon.com"
 languageCode = "en-us"
 
@@ -19,18 +19,14 @@ disableKinds = ["taxonomy", "term", "rss"]
             wrapStandAloneImageWithinParagraph = false
 
 [params]
-    author = "Bryce Kwon"
-    email = "TBD"
+    [params.author]
+        name = "Bryce Kwon"
+        email = "b0d1d384838282d4809d8682d5809d8489d6809dd28584869d8384d58882d686d5d1838087f0c3d9ddc0dcd5dcdfd7d9de9ed3dfdd"
 
 # [[menu.main]]
 # name = "About"
 # url = "/"
 # weight = 10
-
-# [[menu.main]]
-# name = "Contact"
-# url = "/contact/"
-# weight = 20
 
 [[menu.social]]
 name = "GitHub"
@@ -43,9 +39,3 @@ name = "LinkedIn"
 pre = "linkedin"
 url = "https://www.linkedin.com/in/brycekwon"
 weight = 20
-
-[[menu.social]]
-name = "Email"
-pre = "envelope"
-url = "mailto:e28b1ace-348e-4cbe-b6e4-2bce0e6b2942@simplelogin.com"
-weight = 30
