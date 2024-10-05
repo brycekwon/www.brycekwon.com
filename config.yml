@@ -1,0 +1,110 @@
+baseURL: "https://www.brycekwon.com"
+title: Bryce Kwon's Website
+copyright: '© Bryce Kwon 2024'
+enableRobotsTXT: true
+disableHugoGeneratorInject: true
+disableKinds: ["rss"]
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  author: Bryce Kwon
+  description: Computer Science Undegraduate
+  keywords: [brycekwon]
+  defaultTheme: dark
+  disableThemeToggle: false
+  images: ["/images/avatar.png"]
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowWordCount: true
+  ShowToc: true
+  ShowRssButtonInSectionTermList: false
+  ShowCodeCopyButtons: true
+
+  assets:
+    disableHLJS: true
+    disableFingerprinting: false
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.ico"
+    favicon32x32: "/favicon-32x32.ico"
+    # apple_touch_icon: "/apple-touch-icon.png"
+    # safari_pinned_tab: "/safari-pinned-tab.svg"
+
+  label:
+    text: "Bryce Kwon"
+    icon: "/images/avatar.png"
+
+    # profile-mode
+  profileMode:
+    enabled: true
+    title: Bryce Kwon
+    subtitle: "Computer Science Student and Aspring Software Engineer"
+    imageUrl: "/images/avatar.png"
+    buttons:
+      - name: About
+        url: about
+      - name: Contact
+        url: contact
+      - name: Projects
+        url: projects
+
+        # socialIcons:
+        #   - name: linkedin
+        #     url: "https://www.linkedin.com/in/brycekwon"
+        #   - name: github
+        #     url: "https://github.com/brycekwon"
+
+  cover:
+    hidden: false
+    hiddenInList: true
+    hiddenInSingle: false
+
+  editPost:
+    URL: "https://github.com/brycekwon/www.brycekwon.com/blob/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "summary"]
+
+outputs:
+  home:
+    - HTML
+    - JSON
+
+markup:
+  highlight:
+    style: dracula
+    lineNos: false
+    noClasses: false
+    guessSyntax: true
+
+menu:
+  main:
+    - identifier: LinkedIn
+      name: LinkedIn
+      url: https://www.linkedin.com/in/brycekwon
+      weight: 10
+    - identifier: GitHub
+      name: GitHub
+      url: https://github.com/brycekwon
+      weight: 20
+    - identifier: Resume
+      name: Resume
+      url: /resume/
+      weight: 30
+    - identifier: Key
+      name: Keys
+      url: publickey.txt
+      weight: 40

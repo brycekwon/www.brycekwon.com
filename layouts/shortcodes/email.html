@@ -1,4 +1,0 @@
-<a href="/protected-email" obfuscated-email="{{ .Site.Params.author.email }}">
-    {{- range $index, $param := .Params -}}{{- if gt $index 0 }} {{ end }}{{ $param }}{{- end -}}
-</a>
-{{- /* chomp trailing newline */ -}}

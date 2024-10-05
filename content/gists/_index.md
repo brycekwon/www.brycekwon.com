@@ -1,8 +1,8 @@
 ---
-title: Categories
+title: Gists
 ShowReadingTime: false
 ShowWordCount: false
 draft: true
 ---
 
-Find the content you are looking for!
+> Coming Soon!

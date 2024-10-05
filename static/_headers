@@ -7,5 +7,17 @@
     Permissions-Policy: accelerometer=(), autoplay=(), camera=(), clipboard-read=(), clipboard-write=(), fullscreen=*, geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), usb=()
     Content-Security-Policy: upgrade-insecure-requests; default-src 'none'; manifest-src 'self'; font-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
 
+/*.xml
+    Content-Security-Policy : default-src 'none'; img-src 'self' data: https://www.w3.org/; style-src 'self' 'unsafe-inline'; upgrade-insecure-requests; block-all-mixed-content; base-uri 'none'
+
+/*.png
+    Cross-Origin-Resource-Policy : cross-origin
+
+/*.jpg
+    Cross-Origin-Resource-Policy : cross-origin
+
+/*.webp
+    Cross-Origin-Resource-Policy : cross-origin
+
 https://www-brycekwon-com.pages.dev/*
     X-Robots-Tag: noindex

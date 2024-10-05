@@ -1,36 +1,23 @@
 <!DOCTYPE html>
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
 
-<html lang="{{ .Site.LanguageCode }}">
-    <head>
-        {{ partial "meta.html" . }}
-        <title>{{ .Site.Title }}</title>
-        {{ partial "seo.html" . }}
+<head>
+    {{- partial "head.html" . }}
+</head>
 
-        {{ $favicon := "/favicon.ico" | absURL }}
-        <link rel="shortcut icon" href="{{ $favicon }}">
+<body class="
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- print "list" -}}
+{{- end -}}
+{{- if eq site.Params.defaultTheme `dark` -}}
+{{- print " dark" }}
+{{- end -}}
+" id="top">
+    {{- partialCached "header.html" . .Page -}}
+    <main class="main">
+        {{- block "main" . }}{{ end }}
+    </main>
+    {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+</body>
 
-        {{ $script := resources.Get "js/email-obfuscation.js" | minify }}
-        <script src="{{ $script.RelPermalink }}"></script>
-
-        {{ $style := resources.Get "css/default.css" | minify }}
-        <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-
-        {{ if eq .Section "posts" }}
-            {{ $style := resources.Get "css/posts.css" | minify }}
-            <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-        {{ end }}
-    </head>
-    <body class="content">
-        <header>
-            {{ partial "header.html" . }}
-        </header>
-
-        <main id="main-content">
-            {{ block "main" . }}{{ end }}
-        </main>
-
-        <footer class="site-footer">
-            {{ partial "footer.html" }}
-        </footer>
-    </body>
 </html>
