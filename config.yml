@@ -1,6 +1,6 @@
-baseURL: "https://www.brycekwon.com"
-title: Bryce Kwon's Website
-copyright: '© Bryce Kwon 2024'
+baseURL: https://www.brycekwon.com
+title: Bryce Kwon | Undergraduate Student & Aspiring Software Engineer
+copyright: © Bryce Kwon 2024
 enableRobotsTXT: true
 disableHugoGeneratorInject: true
 disableKinds: ["rss"]
@@ -12,8 +12,8 @@ minify:
 params:
   env: production
   author: Bryce Kwon
-  description: Computer Science Undegraduate
-  keywords: [brycekwon]
+  description: Bryce Kwon, a Computer Science student and aspiring software engineer. Explore my projects, professional history, and interests on my journey.
+  keywords: [Bryce Kwon, computer science, software engineer, web developer, personal portfolio, coding projects, undergraduate student, programming resources, gists, posts, public keys, development tools]
   defaultTheme: dark
   disableThemeToggle: false
   images: ["/images/avatar.png"]
@@ -48,11 +48,11 @@ params:
       - name: Projects
         url: projects
 
-        # socialIcons:
-        #   - name: linkedin
-        #     url: "https://www.linkedin.com/in/brycekwon"
-        #   - name: github
-        #     url: "https://github.com/brycekwon"
+  # socialIcons:
+  #   - name: linkedin
+  #     url: "https://www.linkedin.com/in/brycekwon"
+  #   - name: github
+  #     url: "https://github.com/brycekwon"
 
   cover:
     hidden: false
