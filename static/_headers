@@ -2,22 +2,15 @@
     X-Frame-Options: DENY
     X-Content-Type-Options: nosniff
     Referrer-Policy: no-referrer
-    Cache-Control: max-age=259200, public, must-revalidate
+    Cache-Control: max-age=604800, public, must-revalidate
     Strict-Transport-Security: max-age=15768000; includeSubDomains; preload
-    Permissions-Policy: accelerometer=(), autoplay=(), camera=(), clipboard-read=(), clipboard-write=(), fullscreen=*, geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), usb=()
-    Content-Security-Policy: upgrade-insecure-requests; default-src 'none'; manifest-src 'self'; font-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
-
-/*.xml
-    Content-Security-Policy : default-src 'none'; img-src 'self' data: https://www.w3.org/; style-src 'self' 'unsafe-inline'; upgrade-insecure-requests; block-all-mixed-content; base-uri 'none'
+    Permissions-Policy: Permissions-Policy: fullscreen=*
+    Content-Security-Policy: upgrade-insecure-requests; default-src 'none'; manifest-src 'self'; font-src 'self'; img-src 'self'; style-src 'self'; script-src 'self';
 
 /*.png
-    Cross-Origin-Resource-Policy : cross-origin
-
-/*.jpg
-    Cross-Origin-Resource-Policy : cross-origin
-
-/*.webp
-    Cross-Origin-Resource-Policy : cross-origin
+    Cache-Control: max-age=2592000, immutable
+    Cross-Origin-Resource-Policy: same-origin
 
 https://www-brycekwon-com.pages.dev/*
-    X-Robots-Tag: noindex
+    X-Robots-Tag: noindex, nofollow
+    Cache-Control: no-store, no-cache, must-revalidate
