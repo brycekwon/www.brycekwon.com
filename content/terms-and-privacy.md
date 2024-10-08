@@ -5,7 +5,7 @@ date: 2024-10-05
 
 www.brycekwon.com is an independent, personal website and is not affiliated with any company or
 organization. By using this website, you agree to the terms outlined below. If you have any
-questions, feel free to [contact me](contact/). Thank you for visiting!
+questions, feel free to [contact me](/contact). Thank you for visiting!
 
 ## Data Collection
 
