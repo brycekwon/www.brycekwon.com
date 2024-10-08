@@ -96,11 +96,7 @@ menu:
       name: GitHub
       url: https://github.com/brycekwon
       weight: 20
-    - identifier: Resume
-      name: Resume
-      url: Resume.pdf
-      weight: 30
     - identifier: Key
       name: Keys
-      url: publickey.txt
-      weight: 40
+      url: publickey.asc
+      weight: 30
