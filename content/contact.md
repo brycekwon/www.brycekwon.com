@@ -10,7 +10,7 @@ directly via email to confirm the identity of the sender.
 
 ## Email Inboxes
 
-The best way to get in touch with me is via email at hello@me.brycekwon.com.
+The best way to get in touch with me is via email at inbox@me.brycekwon.com.
 
 Feel free to reach out for anything regarding my projects, professional history, or other general
 questions *(I do not accept solicitations)*.

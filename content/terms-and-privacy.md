@@ -1,6 +1,6 @@
 ---
 title: "Terms of Use and Privacy Policy"
-date: 2024-10-05
+date: 2024-10-09
 ---
 
 www.brycekwon.com is an independent, personal website and is not affiliated with any company or
@@ -22,6 +22,19 @@ your data, please refer to [Cloudflare's Privacy Policy](https://www.cloudflare.
 JavaScript is not required to use this website, but some features, like client-side search and the
 theme switcher, may not function without it. It is not used for tracking, analytics, or
 advertising.
+
+## Vulnerability Reporting
+
+If you discover a security vulnerability on this website or its tools, I encourage responsible
+disclosure. Please report any vulnerabilities by [contacting me](/contact) with a detailed description of the
+issue, including steps to reproduce it and the potential impact.
+
+While I work to address the reported issues, please avoid publicly sharing or disclosing the
+vulnerability until I have had a chance to investigate. I am unable to offer financial
+compensation for reported vulnerabilities, but I can to provide proper attribution or
+recognition for valid reports.
+
+Thank you for helping to keep www.brycekwon.com secure and reliable for everyone.
 
 ## Policy Updates
 
