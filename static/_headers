@@ -11,6 +11,14 @@
     Cache-Control: max-age=2592000, immutable
     Cross-Origin-Resource-Policy: same-origin
 
+/licenses
+    X-Robots-Tag: noindex, nofollow
+    Cache-Control: no-store, no-cache, must-revalidate
+
+/terms-and-conditions
+    X-Robots-Tag: noindex, nofollow
+    Cache-Control: no-store, no-cache, must-revalidate
+
 https://www-brycekwon-com.pages.dev/*
     X-Robots-Tag: noindex, nofollow
     Cache-Control: no-store, no-cache, must-revalidate

@@ -17,6 +17,7 @@ params:
   defaultTheme: dark
   disableThemeToggle: false
   images: ["/images/avatar.png"]
+  noindex: ["License", "Terms of Use and Privacy Policy"]
   ShowReadingTime: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
@@ -34,7 +35,7 @@ params:
     text: "Bryce Kwon"
     icon: "/images/avatar.png"
 
-    # profile-mode
+  # profile-mode
   profileMode:
     enabled: true
     title: Bryce Kwon

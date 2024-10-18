@@ -1,10 +1,15 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
-<meta name="robots" content="index, follow">
+
+{{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
+    {{- if not (in $.Site.Params.noindex (or .Params.slug .Title)) }}
+        <meta name="robots" content="index, follow">
+    {{- else }}
+        <meta name="robots" content="noindex, nofollow">
+    {{- end }}
 {{- else }}
-<meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="index, follow">
 {{- end }}
 
 <title>
