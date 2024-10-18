@@ -28,7 +28,7 @@ params:
 
   assets:
     disableHLJS: true
-    disableFingerprinting: false
+    disableFingerprinting: true
     favicon: "/favicon.ico"
 
   label:
