@@ -1,0 +1,19 @@
+ ________________________________________
+/ In theory, theory and practice are the \
+\ same. In practice, they are not.       /
+ ----------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+              ||----w |
+                ||     ||
+
+/* TEAM */
+    Name: Bryce Kwon
+    Contact: contact [at] me.brycekwon.com
+    Location: Portland, OR, United States
+
+/* SITE */
+    Doctype: HTML5
+    Language: English
+    Last Updated: 2024-11-02

@@ -1,0 +1,83 @@
+baseURL: "https://www.brycekwon.com"
+title: "Bryce Kwon | Undergraduate Student & Aspiring Software Engineer"
+copyright: "© Bryce Kwon 2024"
+
+disableKinds: ["rss"]
+enableRobotsTXT: true
+disableHugoGeneratorInject: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: "production"
+  description: "Bryce Kwon, a Computer Science student and aspiring software engineer. Explore my projects, professional history, and interests on my journey."
+  keywords: ["Bryce Kwon", "computer science", "undergraduate student", "personal portfolio", "Bryce Kwon LinkedIn", "Bryce Kwon GitHub"]
+  defaultTheme: dark
+  disableThemeToggle: false
+  hideFooter: true
+  images: ["/images/avatar.png"]
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowWordCount: true
+  ShowToc: true
+  ShowCodeCopyButtons: true
+
+  assets:
+    disableFingerprinting: false
+    favicon: "/favicon.ico"
+
+  label:
+    text: "Bryce Kwon"
+    icon: "/images/avatar.png"
+
+  profileMode:
+    enabled: true
+    title: "Bryce Kwon"
+    subtitle: "I'm Bryce Kwon, a fourth-year undergraduate computer science student interested in software engineering, computer networks, and cybersecurity."
+    imageUrl: "/images/avatar.png"
+
+  cover:
+    hidden: false
+    hiddenInList: true
+    hiddenInSingle: false
+
+  editPost:
+    URL: "https://github.com/brycekwon/www.brycekwon.com/blob/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "summary"]
+
+outputs:
+  home:
+    - "HTML"
+    - "JSON"
+
+markup:
+  highlight:
+    style: "dracula"
+    lineNos: false
+    noClasses: false
+    guessSyntax: true
+
+menu:
+  main:
+    - identifier: "LinkedIn"
+      name: "LinkedIn"
+      url: "https://www.linkedin.com/in/brycekwon"
+      weight: 10
+    - identifier: "GitHub"
+      name: "GitHub"
+      url: "https://github.com/brycekwon"
+      weight: 20
