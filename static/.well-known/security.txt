@@ -1,14 +1,13 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-Contact: mailto:contact@me.brycekwon.com
-Expires: 2026-10-18T07:00:00.000Z
+Contact: mailto:webmaster@me.brycekwon.com
+Expires: 2026-11-06T00:00:00.000Z
 Canonical: https://www.brycekwon.com/.well-known/security.txt
-Policy: https://www.brycekwon.com/terms-and-privacy/#vulnerability-reporting
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQQquP8+Fl2AIT/M8Au29Q/+g6/A6gUCZxKfQwAKCRC29Q/+g6/A
-6giDAQDps7CvvtqwhWN7UBuvw7tux6RYgYNlIkE7lpJ8OHMhvAEAsrpCjTB8z2EX
-9rhgNAyYnapjsTQj4qH4aifmFrBL/QE=
-=44XG
+iHUEARYKAB0WIQQquP8+Fl2AIT/M8Au29Q/+g6/A6gUCZyqSHAAKCRC29Q/+g6/A
+6qvJAQDIGf24DTe5mPcOVNCuhArAIFvjIsAyCunZ/pDqDX4f2QD+OooL1w9R4ERg
+g16jWD3Mjpl+h3WElne1ZyknR6DLNwk=
+=x52x
 -----END PGP SIGNATURE-----

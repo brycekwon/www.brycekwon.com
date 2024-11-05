@@ -1,5 +1,5 @@
 baseURL: "https://www.brycekwon.com"
-title: "Bryce Kwon | Undergraduate Student & Aspiring Software Engineer"
+title: "Bryce Kwon | Undergraduate Computer Science Student"
 copyright: "© Bryce Kwon 2024"
 
 disableKinds: ["rss"]
@@ -12,8 +12,8 @@ minify:
 
 params:
   env: "production"
-  description: "Bryce Kwon, a Computer Science student and aspiring software engineer. Explore my projects, professional history, and interests on my journey."
-  keywords: ["Bryce Kwon", "computer science", "undergraduate student", "personal portfolio", "Bryce Kwon LinkedIn", "Bryce Kwon GitHub"]
+  description: "Bryce Kwon, a computer science student and aspiring software engineer. Explore my projects, professional history, and interests on my journey."
+  keywords: ["Bryce Kwon", "about Bryce Kwon",  "computer science", "undergraduate student", "personal portfolio", "personal website", "Bryce Kwon LinkedIn", "Bryce Kwon GitHub"]
   defaultTheme: dark
   disableThemeToggle: false
   hideFooter: true
